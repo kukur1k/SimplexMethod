@@ -8,18 +8,27 @@ namespace SimplexMethod
 {
     public class SimplexMethod
     {
-        public static void SimplexCalculateMax(double[,] matrix, double[] targetF)
+        public static void SimplexCalculateMax(double[,] matrix , double[] targetF)
         {
             int rows = matrix.GetLength(0);
             int colums = matrix.GetLength(1); 
             
             
             //базисные переменные
-            List<int> basis = new List<int>();
-            for (int i = 0; i < rows - 1; i++)
-            {
-                basis.Add(targetF.Length + i);
-            }
+             List<int> basis = new List<int>();
+             for (int i = 0; i < targetF.Length-1; i++)
+             {
+                 if (Math.Abs(targetF[i]) < 1e-9) 
+                 {
+                     basis.Add(i);
+                 }
+                 else
+                 {
+                     basis.Add(0);
+                 }
+                 
+             }
+             
             
             
             bool needCheck = true;
@@ -93,10 +102,13 @@ namespace SimplexMethod
             }
             
             Console.WriteLine($"целевая функция ---  {matrix[rows - 1, colums - 1]}");
+            int basisIdx = 0;
             for( int i = 0; i < rows; ++i)
             {
-                Console.WriteLine(matrix[i, colums - 1]);
+                Console.WriteLine($"X{basis[i]} == " + matrix[i, colums - 1]);
+                
             }
+            
         }
     }
 }
