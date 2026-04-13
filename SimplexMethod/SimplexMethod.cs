@@ -22,14 +22,26 @@ namespace SimplexMethod
                  {
                      basis.Add(i);
                  }
-                 else
+             }
+
+             // фиксируем индексы, где целевая не пустая, чтобы знатькакие переменные выводить
+             List<int> targetIdxArr = new List<int>();
+             for (int i = 0; i < targetF.Length; i++)
+             {
+                 if (Math.Abs(targetF[i]) > 1e-9) 
                  {
-                     basis.Add(0);
+                     targetIdxArr.Add(i);
                  }
-                 
              }
              
-            
+             
+             
+            Console.WriteLine("Исходный базис:");
+            foreach (var item in basis)
+            {
+                Console.WriteLine("x" + (item+1));
+                // +1 так как в программе базис по индексам массива с 0
+            }
             
             bool needCheck = true;
             while (needCheck)
@@ -102,11 +114,14 @@ namespace SimplexMethod
             }
             
             Console.WriteLine($"целевая функция ---  {matrix[rows - 1, colums - 1]}");
-            int basisIdx = 0;
-            for( int i = 0; i < rows; ++i)
+            for (int i = 0; i < basis.Count; i++)
             {
-                Console.WriteLine($"X{basis[i]} == " + matrix[i, colums - 1]);
-                
+                if (targetIdxArr.Contains(basis[i]))
+                {
+                     double value = matrix[i, colums - 1];
+                     Console.WriteLine($"x{basis[i] + 1} = {value}");
+                }
+                   
             }
             
         }
