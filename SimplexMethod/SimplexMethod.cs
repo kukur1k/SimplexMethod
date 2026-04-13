@@ -55,7 +55,7 @@ namespace SimplexMethod
                     if (matrix[i, minIdxCol] > 1e-9)
                     {
                         double tempVal = matrix[i, colums - 1] / matrix[i, minIdxCol];
-                        if (tempVal < minVal)
+                        if (tempVal < minValRow)
                         {
                             minValRow = tempVal;
                             minIdxRow = i;
@@ -93,7 +93,10 @@ namespace SimplexMethod
             }
             
             Console.WriteLine($"целевая функция ---  {matrix[rows - 1, colums - 1]}");
-
+            for( int i = 0; i < rows; ++i)
+            {
+                Console.WriteLine(matrix[i, colums - 1]);
+            }
         }
     }
 }

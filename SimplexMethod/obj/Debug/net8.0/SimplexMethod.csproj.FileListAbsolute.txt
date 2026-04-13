@@ -1,0 +1,15 @@
+C:\C#_Project\SimplexMethod\SimplexMethod\bin\Debug\net8.0\SimplexMethod.exe
+C:\C#_Project\SimplexMethod\SimplexMethod\bin\Debug\net8.0\SimplexMethod.deps.json
+C:\C#_Project\SimplexMethod\SimplexMethod\bin\Debug\net8.0\SimplexMethod.runtimeconfig.json
+C:\C#_Project\SimplexMethod\SimplexMethod\bin\Debug\net8.0\SimplexMethod.dll
+C:\C#_Project\SimplexMethod\SimplexMethod\bin\Debug\net8.0\SimplexMethod.pdb
+C:\C#_Project\SimplexMethod\SimplexMethod\obj\Debug\net8.0\SimplexMethod.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#_Project\SimplexMethod\SimplexMethod\obj\Debug\net8.0\SimplexMethod.AssemblyInfoInputs.cache
+C:\C#_Project\SimplexMethod\SimplexMethod\obj\Debug\net8.0\SimplexMethod.AssemblyInfo.cs
+C:\C#_Project\SimplexMethod\SimplexMethod\obj\Debug\net8.0\SimplexMethod.csproj.CoreCompileInputs.cache
+C:\C#_Project\SimplexMethod\SimplexMethod\obj\Debug\net8.0\SimplexMethod.sourcelink.json
+C:\C#_Project\SimplexMethod\SimplexMethod\obj\Debug\net8.0\SimplexMethod.dll
+C:\C#_Project\SimplexMethod\SimplexMethod\obj\Debug\net8.0\refint\SimplexMethod.dll
+C:\C#_Project\SimplexMethod\SimplexMethod\obj\Debug\net8.0\SimplexMethod.pdb
+C:\C#_Project\SimplexMethod\SimplexMethod\obj\Debug\net8.0\SimplexMethod.genruntimeconfig.cache
+C:\C#_Project\SimplexMethod\SimplexMethod\obj\Debug\net8.0\ref\SimplexMethod.dll
