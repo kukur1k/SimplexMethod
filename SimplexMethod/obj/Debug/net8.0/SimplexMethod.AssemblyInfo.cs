@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimplexMethod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21e412e496a9739ef74df4a31c93a891623727d5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f73abe93bd40a68e114dfe39b47c5fc6f93320f")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimplexMethod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimplexMethod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
